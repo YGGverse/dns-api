@@ -33,7 +33,7 @@ Check socket
 ##### Request
 
 ```
-GET socket.php?port=80&host=php.net
+GET socket.php?port=80&host=yo.index
 ```
 
 ##### Response
@@ -68,13 +68,13 @@ Show host records
 ###### Single record
 
 ```
-GET dig.php?name=php.net&record=A
+GET dig.php?name=yo.index&record=A
 ```
 
 ###### Multiple records
 
 ```
-GET dig.php?name=php.net&records[]=A&records[]=AAAA
+GET dig.php?name=yo.index&records[]=A&records[]=AAAA
 ```
 
 ##### Response
