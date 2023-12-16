@@ -1,12 +1,12 @@
-# dns-api
+# net-api
 
-Simple DNS API
+Simple Network Tools API
 
 ## Install
 
 ```
-git clone https://github.com/YGGverse/dns-api.git
-cd dns-api
+git clone https://github.com/YGGverse/net-api.git
+cd net-api
 composer install
 ```
 

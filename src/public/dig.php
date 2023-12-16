@@ -8,7 +8,7 @@ header('Content-Type: application/json; charset=utf-8');
 require_once(__DIR__ . '/../../vendor/autoload.php');
 
 // Valid name required to continue
-if (empty($_GET['name']) || !is_string($_GET['name']) || !\Yggverse\Dns\Dig::isHostName($_GET['name']))
+if (empty($_GET['name']) || !is_string($_GET['name']) || !\Yggverse\Net\Dig::isHostName($_GET['name']))
 {
     exit(
         json_encode(
@@ -23,7 +23,7 @@ if (empty($_GET['name']) || !is_string($_GET['name']) || !\Yggverse\Dns\Dig::isH
 // Valid records required to continue
 $records = [];
 
-if (isset($_GET['record']) && is_string($_GET['record']) && \Yggverse\Dns\Dig::isRecord($_GET['record']))
+if (isset($_GET['record']) && is_string($_GET['record']) && \Yggverse\Net\Dig::isRecord($_GET['record']))
 {
     $records[] = $_GET['record'];
 }
@@ -32,7 +32,7 @@ if (isset($_GET['records']) && is_array($_GET['records']))
 {
     foreach ($_GET['records'] as $record)
     {
-        if (is_string($record) && \Yggverse\Dns\Dig::isRecord($record))
+        if (is_string($record) && \Yggverse\Net\Dig::isRecord($record))
         {
             $records[] = $record;
         }
@@ -61,7 +61,7 @@ if (empty($records))
 }
 
 // Resolve begin
-if (!$result = \Yggverse\Dns\Dig::records($_GET['name'], array_unique($records)))
+if (!$result = \Yggverse\Net\Dig::records($_GET['name'], array_unique($records)))
 {
     exit(
         json_encode(

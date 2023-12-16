@@ -4,26 +4,26 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4fd3c797b2c98cf2e93558b64c5da47b",
+    "content-hash": "0bf82e6e2a05c49f8a6c7e89da62a373",
     "packages": [
         {
-            "name": "yggverse/dns",
+            "name": "yggverse/net",
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/YGGverse/dns-php.git",
-                "reference": "e54a40bb673e3c4cb87d8d7275adc7121042281e"
+                "url": "https://github.com/YGGverse/net-php.git",
+                "reference": "3a89da61d56fba97e5f48c2d840dd9f70b4fd295"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YGGverse/dns-php/zipball/e54a40bb673e3c4cb87d8d7275adc7121042281e",
-                "reference": "e54a40bb673e3c4cb87d8d7275adc7121042281e",
+                "url": "https://api.github.com/repos/YGGverse/net-php/zipball/3a89da61d56fba97e5f48c2d840dd9f70b4fd295",
+                "reference": "3a89da61d56fba97e5f48c2d840dd9f70b4fd295",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Yggverse\\Dns\\": "src/"
+                    "Yggverse\\Net\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -31,10 +31,10 @@
                 "MIT"
             ],
             "support": {
-                "issues": "https://github.com/YGGverse/dns-php/issues",
-                "source": "https://github.com/YGGverse/dns-php/tree/1.0.0"
+                "issues": "https://github.com/YGGverse/net-php/issues",
+                "source": "https://github.com/YGGverse/net-php/tree/1.0.0"
             },
-            "time": "2023-12-15T16:19:42+00:00"
+            "time": "2023-12-16T10:55:48+00:00"
         }
     ],
     "packages-dev": [],

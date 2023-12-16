@@ -1,13 +1,13 @@
 {
-    "name": "yggverse/dns-api",
+    "name": "yggverse/net-api",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Yggverse\\DnsApi\\": "src/"
+            "Yggverse\\NetApi\\": "src/"
         }
     },
     "require": {
-        "yggverse/dns": "^1.0"
+        "yggverse/net": "^1.0"
     }
 }
