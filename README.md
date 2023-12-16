@@ -25,8 +25,8 @@ Check socket
 
 #### Usage
 
-* `port` required
-* `host` optional, name, IPv4 or IPv6 `REMOTE_ADDR` by default
+* `port` - required
+* `host` - optional, name, IPv4 or IPv6 `REMOTE_ADDR` by default
 
 ```
 GET socket.php?port=80&host=php.net
@@ -47,9 +47,9 @@ Show host records
 
 #### Usage
 
-* `name` required host name, IPv4 or IPv6
-* `record` required if `records` not provided
-* `records` required if `record` not provided
+* `name` - required host name, IPv4 or IPv6
+* `record` - required if `records` not provided
+* `records` - required if `record` not provided
   + [x] A
   + [x] AAAA
   + [ ] SRV #1
