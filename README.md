@@ -41,7 +41,7 @@ GET socket.php?port=80&host=php.net
 ```
 JSON
 {
-  status: bool
+  success: bool
 }
 ```
 
@@ -82,7 +82,7 @@ GET dig.php?name=php.net&records[]=A&records[]=AAAA
 ```
 JSON
 {
-  status: bool
+  success: bool
   records: array
 }
 ```
