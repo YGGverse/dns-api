@@ -26,7 +26,7 @@ Check socket
 #### Usage
 
 * `port` required
-* `host` optional, name, IPv4 or IPv6 (`REMOTE_ADDR` by default)
+* `host` optional, name, IPv4 or IPv6 `REMOTE_ADDR` by default
 
 ```
 GET socket.php?port=80&host=php.net
