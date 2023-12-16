@@ -47,20 +47,27 @@ Show host records
 
 #### Usage
 
+##### Attributes
+
 * `name` - required host name, IPv4 or IPv6
 * `record` - required if `records` not provided
 * `records` - required if `record` not provided
-  + [x] A
-  + [x] AAAA
-  + [ ] SRV #1
 
-##### Single record
+###### Records support
+
+* [x] A
+* [x] AAAA
+* [ ] SRV #1
+
+##### Request
+
+###### Single record
 
 ```
 GET dig.php?name=php.net&record=A
 ```
 
-##### Multiple records
+###### Multiple records
 
 ```
 GET dig.php?name=php.net&records[]=A&records[]=AAAA
