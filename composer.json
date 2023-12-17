@@ -1,10 +1,10 @@
 {
-    "name": "yggverse/net-api",
+    "name": "yggverse/web-api",
     "type": "project",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Yggverse\\NetApi\\": "src/"
+            "Yggverse\\WebApi\\": "src/"
         }
     },
     "require": {
