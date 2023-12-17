@@ -61,7 +61,7 @@ Show host records
 
 * [x] A
 * [x] AAAA
-* [ ] SRV #1
+* [x] SRV
 
 ##### Request
 
