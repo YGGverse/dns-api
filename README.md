@@ -1,6 +1,6 @@
 # net-api
 
-Simple Network Tools API
+Network API with native Yggdrasil/IPv6 support
 
 ## Install
 
@@ -17,11 +17,11 @@ cd src/public
 php -S localhost:8080
 ```
 
-## Usage
+## Features
 
 ### Socket
 
-Check socket
+Check socket (also useful for open ports detection)
 
 #### Usage
 
@@ -86,3 +86,18 @@ JSON
   records: array
 }
 ```
+
+## Online
+
+### Yggdrasil
+
+ * `http://[201:23b4:991a:634d:8359:4521:5576:15b7]/api/net/`
+
+### Alfis
+
+ * `http://api.ygg/net/`
+ * `http://api.ygg.at/net/`
+
+### Clearnet
+
+ * `https://yggapi.duckdns.org/net/`
