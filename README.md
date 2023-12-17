@@ -96,6 +96,9 @@ JSON
 ### Alfis
 
  * `http://api.ygg/net/`
+
+### Hybrid
+
  * `http://api.ygg.at/net/`
 
 ### Clearnet
