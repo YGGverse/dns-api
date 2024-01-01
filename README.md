@@ -10,6 +10,12 @@ cd web-api
 composer install
 ```
 
+## Config
+
+```
+nano config.json
+```
+
 ## Run
 
 ```

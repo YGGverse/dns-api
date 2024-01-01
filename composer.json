@@ -8,6 +8,6 @@
         }
     },
     "require": {
-        "yggverse/net": "^1.0"
+        "yggverse/net": "^1.2"
     }
 }

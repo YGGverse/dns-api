@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "0bf82e6e2a05c49f8a6c7e89da62a373",
+    "content-hash": "c062f15666280a924bcafbc19443d914",
     "packages": [
         {
             "name": "yggverse/net",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/YGGverse/net-php.git",
-                "reference": "3a89da61d56fba97e5f48c2d840dd9f70b4fd295"
+                "reference": "60114e9d1e19731b79b7a0de7824164d7a288d7e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/YGGverse/net-php/zipball/3a89da61d56fba97e5f48c2d840dd9f70b4fd295",
-                "reference": "3a89da61d56fba97e5f48c2d840dd9f70b4fd295",
+                "url": "https://api.github.com/repos/YGGverse/net-php/zipball/60114e9d1e19731b79b7a0de7824164d7a288d7e",
+                "reference": "60114e9d1e19731b79b7a0de7824164d7a288d7e",
                 "shasum": ""
             },
             "type": "library",
@@ -32,9 +32,9 @@
             ],
             "support": {
                 "issues": "https://github.com/YGGverse/net-php/issues",
-                "source": "https://github.com/YGGverse/net-php/tree/1.0.0"
+                "source": "https://github.com/YGGverse/net-php/tree/1.2.0"
             },
-            "time": "2023-12-16T10:55:48+00:00"
+            "time": "2023-12-17T05:59:26+00:00"
         }
     ],
     "packages-dev": [],

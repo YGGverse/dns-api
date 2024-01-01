@@ -1,11 +1,42 @@
 <?php
 
+// Init config
+$config = json_decode(
+    file_get_contents(
+        __DIR__ . '/../../../config.json'
+    )
+);
+
+// Init helpers
+function isRegex(array $regex, string $value): bool
+{
+    foreach ($regex as $regex)
+    {
+        if (preg_match($regex, $value))
+        {
+            return true;
+        }
+    }
+
+    return false;
+}
+
 // Set headers
-header('Access-Control-Allow-Origin: *');
+foreach ($config->net->socket->response->headers as $key => $value)
+{
+    header(
+        sprintf(
+            '%s: %s',
+            $key,
+            $value
+        )
+    );
+}
+
 header('Content-Type: application/json; charset=utf-8');
 
 // Load dependencies
-require_once(__DIR__ . '/../../vendor/autoload.php');
+require_once(__DIR__ . '/../../../vendor/autoload.php');
 
 // Valid port required to continue
 if (empty($_GET['port']) || !\Yggverse\Net\Socket::isPort($_GET['port']))
@@ -15,6 +46,18 @@ if (empty($_GET['port']) || !\Yggverse\Net\Socket::isPort($_GET['port']))
             [
                 'success' => false,
                 'message' => _('valid port required')
+            ]
+        )
+    );
+}
+
+if (!isRegex($config->net->socket->request->port->regex, $_GET['port']))
+{
+    exit(
+        json_encode(
+            [
+                'success' => false,
+                'message' => _('port not supported')
             ]
         )
     );
@@ -61,6 +104,18 @@ else
     {
         $host = $_GET['host'];
     }
+}
+
+if (!isRegex($config->net->socket->request->host->regex, $host))
+{
+    exit(
+        json_encode(
+            [
+                'success' => false,
+                'message' => _('host not supported')
+            ]
+        )
+    );
 }
 
 // Connection test
